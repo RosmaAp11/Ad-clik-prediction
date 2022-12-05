@@ -20,7 +20,6 @@ Network_diagnosis = ''
 # membuat tombol untuk prediksi
 if st.button('Test Prediksi'):
     Network_prediction = Network_model.predict([[Gender, Age, EstimatedSalary]])
-    
     if(Network_prediction[0] == 1):
         Network_diagnosis = 'Pelanggan Mengklik Iklan'
     else :
